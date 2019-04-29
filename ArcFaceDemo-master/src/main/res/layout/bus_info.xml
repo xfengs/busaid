@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/busNum"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text"
+            android:layout_alignParentRight="@+id/text"
+            android:hint="车牌后四位"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/testView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18dp" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/logoff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/loginLayout"
+            android:layout_centerInParent="false"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="退出登录"
+            app:qmui_radius="4dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/lineList2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/qmui_config_color_background"
+        android:layout_below="@+id/loginLayout"
+        android:fitsSystemWindows="true">
+
+        <com.arcsoft.sdk_demo.QMUIGroupListView
+            android:id="@+id/groupListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/facelist"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/lineList2"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stuCount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:background="#eeeeee"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_startrecg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:text="乘车识别"
+        app:qmui_isRadiusAdjustBounds="true"
+        android:layout_below="@id/facelist" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/debug1"
+        android:layout_below="@+id/btn_startrecg"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

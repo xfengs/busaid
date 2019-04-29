@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:contentDescription=""
+        android:fitsSystemWindows="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/topbg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@color/colorPrimary"
+        android:id="@+id/groove" />
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/groove"
+        android:fitsSystemWindows="true" />
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:layout_below="@id/topBar" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/namecard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            app:cardCornerRadius="4dp"
+            app:contentPadding="5dp"
+            android:layout_margin="10dp" >
+
+
+            <LinearLayout
+                android:id="@+id/cardviewlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/testView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="35dp"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="24dp" />
+
+            <LinearLayout
+                android:id="@+id/loginLayout_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:focusableInTouchMode="true" >
+
+
+                <Button
+                    android:id="@+id/updatedata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更新数据"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/updatedata" >
+                </Button>
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送通知"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="#C8ffffff"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/message"
+                    >
+                </Button>
+                <Button
+                    android:id="@+id/logoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出登录"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="#C8ffffff"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/logoff" >
+                </Button>
+<!--                <LinearLayout
+                    android:id="@+id/operation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <ImageView
+                    android:layout_width="108dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/operation_img"
+                    android:layout_weight="1" />
+                    <TextView
+                        android:id="@+id/operation_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="运营中"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="2dp"  />
+                </LinearLayout>-->
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/facelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namecard"
+            android:background="#eeeeee"
+            android:orientation="vertical">
+
+            <com.arcsoft.sdk_demo.QMUIGroupListView
+                android:id="@+id/groupListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/stuCount"
+                android:layout_width="fill_parent"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="30dp"
+                android:textSize="14sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="76dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+
+        </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

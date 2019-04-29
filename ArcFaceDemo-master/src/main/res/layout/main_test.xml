@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+
+   <!-- <LinearLayout
+        android:id="@+id/facelist"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee">
+        <TextView
+            android:id="@+id/tv1"
+            android:text="本车已注册学生（人）"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee" />
+
+    <com.guo.android_extend.widget.HListView
+        android:id="@+id/hFaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none"
+        app:dividerHeight="1dp"
+        app:listSelector="@android:drawable/list_selector_background"/>
+
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_below="@+id/facelist"
+        android:orientation="vertical"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:text="上车识别" />
+
+
+        <Button
+            android:id="@+id/businfo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginLeft="5px"
+            android:text="本车信息" />
+        <Button
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginLeft="5px"
+            android:text="实时定位" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_below="@+id/LinearLayout1"
+        android:orientation="horizontal"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+    <!--    <Button
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginLeft="5px"
+            android:text="定位" />-->
+    </LinearLayout>
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/LinearLayout2"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/outLayout"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

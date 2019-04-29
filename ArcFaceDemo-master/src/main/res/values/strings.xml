@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+    <string name="app_name">校车助手</string>
+    <!--  BluetoothChat -->
+    <string name="send">发送</string>
+    <string name="not_connected">未连接设备</string>
+    <string name="bt_not_enabled_leaving">蓝牙未启用</string>
+    <string name="title_connecting">连接中...</string>
+    <string name="title_connected_to">已连接: </string>
+    <string name="title_not_connected">未连接</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">扫描设备...</string>
+    <string name="select_device">选择连接设备</string>
+    <string name="none_paired">没有配对设备</string>
+    <string name="none_found">未找到设备</string>
+    <string name="title_paired_devices">已配对设备</string>
+    <string name="title_other_devices">其它可用设备</string>
+    <string name="button_scan">扫描设备</string>
+
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+
+
+    <!--wifi-->
+    <string name="server">服务端</string>
+    <string name="client">客户端</string>
+    <string name="set">设置</string>
+    <string name="start_server">开启服务</string>
+    <string name="send_hint">请输入发送内容</string>
+    <string name="server_ip">服务端ip地址</string>
+    <string name="port">端口</string>
+    <string name="hint_port">8086</string>
+    <string name="message_mode">消息格式</string>
+    <string name="txt">文本</string>
+    <string name="hex">hex</string>
+    <string name="send_ontime">定时发送</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="hint_time">需要定时发送则填写</string>
+
+    <string name="disconnect">断开</string>
+    <string name="state">状态</string>
+    <string name="state_closed">未开启</string>
+    <string name="state_connected">已连接</string>
+    <string name="state_disconected">已断开连接</string>
+    <string name="state_disconect_accept">已断开连接,等待连接</string>
+    <string name="state_connecting">正在连接</string>
+    <string name="state_connect_fail">连接失败</string>
+    <string name="state_opened">服务已开启，等待连接</string>
+    <string name="textview">TextView</string>
+    <string name="startlocation">开始定位</string>
+    <string name="stoplocation">停止定位</string>
+    <string name="startforeground">开启后台定位</string>
+    <string name="stopforeground">停止后台定位</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">识别</string>
+    <string name="title_notifications">历史</string>
+
+
+<!--floag-->
+    <string name="menu_item_import">Import</string>
+    <string name="menu_item_gallery">Gallery</string>
+    <string name="menu_item_slideshow">Slideshow</string>
+    <string name="menu_item_tools">Tools</string>
+    <string name="menu_group_communicate">Communicate</string>
+    <string name="menu_item_share">Share</string>
+    <string name="menu_item_send">Send</string>
+
+</resources>

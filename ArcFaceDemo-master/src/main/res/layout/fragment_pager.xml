@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.arcsoft.sdk_demo.layout.DropDownMenu
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/menu"
+        android:background="@color/white"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#f2f2f2"
+        android:padding="5dp">
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_submit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        app:qmui_backgroundColor="@color/white"
+        android:text="查询"
+        android:layout_below="@id/cView2"
+        android:textSize="14sp"/>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_updatebuslog"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="30dp"
+        app:qmui_backgroundColor="@color/white"
+        android:text="上传"
+        android:layout_below="@id/cView2"
+        android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginBottom="60dp">
+        <ScrollView
+            android:id="@+id/recycle_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <com.tuacy.pinnedheader.PinnedHeaderRecyclerView
+                android:id="@+id/recycler_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </ScrollView>
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+        android:id="@+id/buslogTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="数据统计"
+        android:gravity="center_vertical|center"
+        android:textSize="24dp"
+        android:background="#00A8E1"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/wclabel"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="未乘车学生"
+        android:layout_below="@id/buslogTopBar"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/cView1"
+        android:layout_below="@id/wclabel">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sumView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/yclabel"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/cView1"
+        android:text="已乘车学生"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/yclabel"
+        android:id="@+id/cView2">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sumView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" />
+    </LinearLayout>
+
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:text="上传数据"
+        android:layout_below="@id/cView2" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:text="下线"
+        android:layout_below="@id/btn_upload" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/debug3"
+        android:layout_below="@+id/btn_offline"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/imageView1"
+        android:clickable="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:qmui_border_color="?attr/qmui_config_color_gray_6"
+        app:qmui_border_width="3px"
+        app:qmui_is_circle="true"
+        app:qmui_selected_border_color="?attr/qmui_config_color_gray_4"
+        app:qmui_selected_border_width="1px"
+        app:qmui_selected_mask_color="?attr/qmui_config_color_gray_8"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/textview"
+        android:textColor="#06020b"
+        android:textSize="12dp"/>
+
+</RelativeLayout>
