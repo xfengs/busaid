@@ -66,7 +66,7 @@ public class Application extends android.app.Application {
 	public BusStatus mBusStatus=new BusStatus();
 	public int linechecked;
 	public int lastLine=-1;
-	public String AppURL="http://dev.busaid.cn/api/app/";
+	public String AppURL="http://lisheng.busaid.cn/api/app/";
 
 
 
