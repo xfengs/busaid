@@ -68,8 +68,6 @@ public class Application extends android.app.Application {
 	public int lastLine=-1;
 	public String AppURL="http://dev.busaid.cn/api/app/";
 
-
-
 	private MyLocationListener myLocationListener = new MyLocationListener();
 	private BaiduMap mBaiduMap;
 	private NotificationUtils mNotificationUtils;
